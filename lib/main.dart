@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'Index.dart';
+import 'chapter_2/views/home.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: const Home(),
+      home: const HomeChap2(),
     );
   }
 }
