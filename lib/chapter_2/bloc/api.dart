@@ -21,15 +21,14 @@ class Api {
     }
 
     final person = await _getJson('http://127.0.0.1:5500/apis/persons.json')
-    .then((json) => json.map((value) =>Person.fromJson(value)));
+        .then((json) => json.map((value) => Person.fromJson(value)));
     getPerson = person.toList();
 
     final animal = await _getJson('http://127.0.0.1:5500/apis/animals.json')
-        .then((json) => json.map((value) =>Animal.fromJson(value)));
+        .then((json) => json.map((value) => Animal.fromJson(value)));
     getAnimal = animal.toList();
 
     return _extractThingUsingSearchTerm(term) ?? [];
-
   }
 
   List<Thing>? _extractThingUsingSearchTerm(SearchTerm search) {
@@ -49,7 +48,7 @@ class Api {
           result.add(person);
         }
       }
-      return result; 
+      return result;
     } else {
       return null;
     }
