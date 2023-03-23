@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:rx_dart/chapter_2/model/things.dart';
+import 'package:rx_dart/chapter_2(Search)/model/things.dart';
 
 enum AnimalType { dog, cat, rabbit, unknown }
 

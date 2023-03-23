@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:rx_dart/chapter_2/model/animal.dart';
-import 'package:rx_dart/chapter_2/model/person.dart';
 
 import '../bloc/search_result.dart';
+import '../model/animal.dart';
+import '../model/person.dart';
 
 class SearchView extends StatelessWidget {
   final Stream<SearchResult?> searchResult;

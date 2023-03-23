@@ -1,7 +1,8 @@
 import 'package:flutter/foundation.dart';
-import 'package:rx_dart/chapter_2/bloc/api.dart';
-import 'package:rx_dart/chapter_2/bloc/search_result.dart';
+import 'package:rx_dart/chapter_2(Search)/bloc/search_result.dart';
 import 'package:rxdart/rxdart.dart';
+
+import 'api.dart';
 
 @immutable
 class SearchBloc {

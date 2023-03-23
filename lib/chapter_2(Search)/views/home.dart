@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:rx_dart/chapter_2/bloc/Search_bloc.dart';
-import 'package:rx_dart/chapter_2/bloc/api.dart';
-import 'package:rx_dart/chapter_2/views/search.dart';
+import 'package:rx_dart/chapter_2(Search)/views/search.dart';
+
+import '../bloc/Search_bloc.dart';
+import '../bloc/api.dart';
 
 class HomeChap2 extends StatefulWidget {
   const HomeChap2({Key? key}) : super(key: key);

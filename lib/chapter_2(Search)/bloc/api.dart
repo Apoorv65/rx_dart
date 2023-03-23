@@ -1,10 +1,11 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:rx_dart/chapter_2/model/things.dart';
+
 
 import '../model/animal.dart';
 import '../model/person.dart';
+import '../model/things.dart';
 
 typedef SearchTerm = String;
 
