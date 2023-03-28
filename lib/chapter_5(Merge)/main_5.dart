@@ -12,12 +12,12 @@ void main() {
 
 void testIt() async {
   final _stream1 = Stream.periodic(
-      const Duration(seconds: 1), (count) => 'Stream 1 & count is :$count').take(5);
+      const Duration(seconds: 1), (count) => 'Stream 1 & count is :$count');
 
   final _stream2 = Stream.periodic(
       const Duration(seconds: 3), (count) => 'Stream 2 & count is :$count');
 
-  final result = _stream1.concatWith([_stream2]);
+  final result = _stream1.mergeWith([_stream2]);
   await for(final value in result){
     value.log();
   }
