@@ -106,7 +106,7 @@ class _MyAppState extends State<MyApp> {
                 return Wrap(
                   children: TypeOfThing.values.map((typeOfThing) {
                     return FilterChip(
-                      showCheckmark:false,
+                      showCheckmark: false,
                       selectedColor: Colors.deepPurple.shade50,
                       onSelected: (selected) {
                         final type = selected ? typeOfThing : null;
@@ -120,10 +120,10 @@ class _MyAppState extends State<MyApp> {
               }),
           Expanded(
               child: StreamBuilder<Iterable<Thing>>(
-                stream: bloc.things,
-                builder: (context, snapshot) {
-                  final things = snapshot.data ?? [];
-                  return ListView.builder(
+            stream: bloc.things,
+            builder: (context, snapshot) {
+              final things = snapshot.data ?? [];
+              return ListView.builder(
                   itemCount: things.length,
                   itemBuilder: (context, snapshot) {
                     final thing = things.elementAt(snapshot);
