@@ -39,7 +39,7 @@ class Bloc {
   }) {
     final typeofThingSubject = BehaviorSubject<TypeOfThing?>();
     final filteredThings = typeofThingSubject
-        .debounceTime(const Duration(milliseconds: 10))
+        .debounceTime(const Duration(milliseconds: 100))
         .map<Iterable<Thing>>((typeofThing) {
       if (typeofThing != null) {
         return things.where((things) => things.type == typeofThing);
